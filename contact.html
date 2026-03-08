@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Electro Youssef in ZERARDA. Book your phone repair online, check our location on the map, or send us a message via WhatsApp.">
+  <title>Contact & Booking | Electro Youssef – Phone Repair ZERARDA</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+</head>
+<body>
+
+  <nav class="navbar scrolled" id="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo"><span class="logo-icon">⚡</span> <span data-i18n="brand_name">Electro Youssef</span></a>
+      <div class="nav-links" id="nav-links">
+        <a href="index.html" data-i18n="nav_home">Home</a>
+        <a href="services.html" data-i18n="nav_services">Services</a>
+        
+        <a href="about.html" data-i18n="nav_about">About</a>
+        <a href="contact.html" class="active" data-i18n="nav_contact">Contact</a>
+        <div class="lang-switcher">
+          <button class="lang-btn" aria-haspopup="true" aria-expanded="false">
+            🌐 <span class="current-lang">EN</span> ▾
+          </button>
+          <div class="lang-dropdown">
+            <button class="lang-option active" data-lang="en" data-i18n="lang_en">English (EN)</button>
+            <button class="lang-option" data-lang="fr" data-i18n="lang_fr">Français (FR)</button>
+            <button class="lang-option" data-lang="ar" data-i18n="lang_ar">العربية (AR)</button>
+          </div>
+        </div>
+        <div class="nav-cta"><a href="contact.html" class="btn btn-primary btn-sm" data-i18n="nav_book">Book Repair</a></div>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+  <div class="nav-overlay" id="nav-overlay"></div>
+
+  <header class="page-header">
+    <div class="container">
+      <nav class="breadcrumb"><a href="index.html" data-i18n="nav_home">Home</a><span class="separator">/</span><span data-i18n="nav_contact">Contact</span></nav>
+      <h1><span data-i18n="contact_title1">Book Your</span> <span class="text-gradient" data-i18n="contact_title2">Repair</span></h1>
+      <p data-i18n="contact_sub">Visit us in ZERARDA, call us, or book your repair online. We\'re ready to help!</p>
+    </div>
+  </header>
+
+  <section class="section" style="padding-top:20px">
+    <div class="container">
+      <div class="contact-grid">
+        
+        <!-- Booking Form -->
+        <div class="glass-card reveal">
+          <h2 style="font-size:1.6rem;margin-bottom:24px" data-i18n="online_booking">Online Booking</h2>
+          <form id="booking-form" class="contact-form">
+            <div class="form-group">
+              <label for="name" data-i18n="form_name">Full Name *</label>
+              <input type="text" id="name" name="name" class="form-control" placeholder="John Doe" data-i18n="form_name_ph" required>
+            </div>
+            <div class="form-group">
+              <label for="phone" data-i18n="form_phone">Phone Number *</label>
+              <input type="tel" id="phone" name="phone" class="form-control" placeholder="05XX XX XX XX" required>
+            </div>
+            <div class="form-group">
+              <label for="device" data-i18n="form_device">Device Model *</label>
+              <input type="text" id="device" name="device" class="form-control" placeholder="e.g., iPhone 13 Pro, Samsung S22" data-i18n="form_device_ph" required>
+            </div>
+            <div class="form-group">
+              <label for="service" data-i18n="form_service">Service Needed *</label>
+              <select id="service" name="service" class="form-control" required>
+                <option value="" disabled selected data-i18n="form_service_sel">Select a service...</option>
+                <option value="Screen Replacement" data-i18n="opt_screen">Screen Replacement</option>
+                <option value="Battery Replacement" data-i18n="opt_battery">Battery Replacement</option>
+                <option value="Charging Port" data-i18n="opt_port">Charging Port Repair</option>
+                <option value="Water Damage" data-i18n="opt_water">Water Damage</option>
+                <option value="Software Issue" data-i18n="opt_soft">Software Issue</option>
+                <option value="Data Recovery" data-i18n="opt_data">Data Recovery</option>
+                <option value="Other Diagnostics" data-i18n="opt_other">Other / Need Diagnostics</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message" data-i18n="form_msg">Additional Details (Optional)</label>
+              <textarea id="message" name="message" class="form-control" placeholder="Tell us more about the issue..." data-i18n="form_msg_ph"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:10px" data-i18n="form_send">
+              Send via WhatsApp 💬
+            </button>
+          </form>
+        </div>
+
+        <!-- Contact Info & Map -->
+        <div class="reveal">
+          <div class="glass-card contact-info-card">
+            <h2 style="font-size:1.6rem;margin-bottom:24px" data-i18n="contact_info">Contact Info</h2>
+            
+            <div class="contact-info-item">
+              <div class="contact-info-icon">📍</div>
+              <div>
+                <div class="contact-info-label" data-i18n="address">Address</div>
+                <div class="contact-info-value"><a href="https://maps.apple.com/?ll=33.976822,-4.379004&q=Aissam%20Lakhyari%E2%80%99s%20Location&t=h" target="_blank" data-i18n="address_val" style="color: var(--neon-blue); text-decoration: underline;">Main Street, ZERARDA<br>Morocco</a></div>
+              </div>
+            </div>
+            
+            <div class="contact-info-item">
+              <div class="contact-info-icon">📞</div>
+              <div>
+                <div class="contact-info-label" data-i18n="phone">Phone</div>
+                <div class="contact-info-value"><a href="tel:212771863888">+212 771863888</a></div>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon">💬</div>
+              <div>
+                <div class="contact-info-label" data-i18n="whatsapp">WhatsApp</div>
+                <div class="contact-info-value"><a href="https://wa.me/212771863888" target="_blank" data-i18n="chat_with_us">Chat with us</a></div>
+              </div>
+            </div>
+            
+            <!-- NEW: Gmail Option -->
+            <div class="contact-info-item">
+              <div class="contact-info-icon">✉️</div>
+              <div>
+                <div class="contact-info-label" data-i18n="email">Email</div>
+                <div class="contact-info-value"><a href="mailto:electroyoussef2025@gmail.com">electroyoussef2025@gmail.com</a></div>
+              </div>
+            </div>
+            
+            <div class="contact-info-item">
+              <div class="contact-info-icon">🕐</div>
+              <div>
+                <div class="contact-info-label" data-i18n="hours">Business Hours</div>
+                <div class="contact-info-value">
+                  <span data-i18n="sat_thu">Mon - Sat</span>: 8:00 AM - 12:00 PM <br> 2:00 PM - 8:00 PM<br>
+                  <span data-i18n="fri_closed">Sunday: Closed</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="map-wrapper">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3403.4!2d-4.379004!3d33.976822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1700000000!5m2!1sen!2sus" 
+              allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer" style="margin-top:60px">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo"><span class="logo-icon">⚡</span> <span data-i18n="brand_name">Electro Youssef</span></a>
+          <p data-i18n="footer_desc">Your trusted smartphone repair partner in ZERARDA. Fast, reliable, and professional service.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook">📘</a>
+            <a href="#" aria-label="Instagram">📷</a>
+            <a href="https://wa.me/212771863888" aria-label="WhatsApp">💬</a>
+          </div>
+        </div>
+        <div><h4 data-i18n="quick_links">Quick Links</h4><ul class="footer-links"><li><a href="index.html" data-i18n="nav_home">Home</a></li><li><a href="services.html" data-i18n="nav_services">Services</a></li><li></li><li><a href="about.html" data-i18n="nav_about">About Us</a></li><li><a href="contact.html" data-i18n="nav_contact">Contact</a></li></ul></div>
+        <div><h4 data-i18n="services_h4">Services</h4><ul class="footer-links"><li><a href="services.html" data-i18n="srv_screen">Screen Replacement</a></li><li><a href="services.html" data-i18n="srv_battery">Battery Replacement</a></li><li><a href="services.html" data-i18n="srv_water">Water Damage</a></li><li><a href="services.html" data-i18n="srv_data">Data Recovery</a></li><li><a href="services.html" data-i18n="srv_acc">Accessories</a></li></ul></div>
+        <div><h4 data-i18n="contact_h4">Contact</h4><ul class="footer-links"><li><span data-i18n="footer_loc">📍 ZERARDA</span></li><li><a href="tel:212771863888">📞 +212 771863888</a></li><li><a href="mailto:electroyoussef2025@gmail.com" data-i18n="footer_email">✉️ Email</a></li><li><a href="https://wa.me/212771863888">💬 WhatsApp</a></li></ul></div>
+      </div>
+      <div class="footer-bottom"><span data-i18n="rights">© 2026 Electro Youssef. All rights reserved.</span><span data-i18n="made_in">Made with ⚡ in ZERARDA</span></div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/212771863888" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">💬<span class="tooltip">Chat with us!</span></a>
+  <button class="back-to-top" aria-label="Back to top">↑</button>
+
+  <script src="js/translations.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
