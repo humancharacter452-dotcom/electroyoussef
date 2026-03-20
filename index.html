@@ -1,26 +1,463 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="refresh" content="0;url=index-modern.html">
-  <title>Youssef GSM - Redirecting</title>
-  <style>
-    html, body { margin: 0; padding: 0; background: #0a0a0f; }
-  .loading { display: flex; align-items: center; justify-content: center; min-height: 100vh; color: #f8fafc; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
-    .spinner { width: 40px; height: 40px; border: 4px solid #6366f1; border-top-color: transparent; border-radius: 50%; animation: spin 1s linear infinite; }
-    @keyframes spin { 0% { border-top-color: #6366f1; } 25% { transform: rotate(90deg); } 50% { border-top-color: #6366f1; } 75% { transform: rotate(180deg); } 100% { transform: rotate(270deg); } }
-    .logo { font-size: 2rem; margin-bottom: 1rem; }
-    .text { font-size: 1rem; color: #94a3b8; }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Professional GSM services at Youssef GSM in ZERARDA. Tool activations, FRP bypass, cloud account removal, bypass solutions.">
+  <title>Youssef GSM | Professional GSM Services & Solutions</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/modern-style.css">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
 </head>
 <body>
-  <div class="loading">
-    <div class="logo">⚡</div>
-    <div class="spinner"></div>
-    <div class="text">Loading Youssef GSM...</div>
-  </div>
-  <script>
-    window.location.replace('index-modern.html');
-  </script>
+
+  <!-- ═══ NAVIGATION ═══ -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        <div class="nav-logo-icon">⚡</div>
+        <span data-i18n="brand_name">Youssef GSM</span>
+      </a>
+      
+      <div class="nav-links" id="nav-links">
+        <a href="index.html" class="active" data-i18n="nav_home">Home</a>
+        <a href="services.html" data-i18n="nav_services">Services</a>
+        <a href="about.html" data-i18n="nav_about">About</a>
+        <a href="contact.html" data-i18n="nav_contact">Contact</a>
+        
+        <div class="lang-switcher">
+          <button class="lang-btn" aria-haspopup="true" aria-expanded="false">
+            🌐 <span class="current-lang">EN</span> ▾
+          </button>
+          <div class="lang-dropdown">
+            <button class="lang-option active" data-lang="en" data-i18n="lang_en">English (EN)</button>
+            <button class="lang-option" data-lang="fr" data-i18n="lang_fr">Français (FR)</button>
+            <button class="lang-option" data-lang="ar" data-i18n="lang_ar">العربية (AR)</button>
+          </div>
+        </div>
+        
+        <a href="contact.html" class="btn btn-primary btn-sm" data-i18n="nav_book">Book Service</a>
+      </div>
+      
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══ HERO SECTION ═══ -->
+  <section class="hero">
+    <div class="hero-bg">
+      <div class="hero-grid"></div>
+      <div class="hero-orb hero-orb-1"></div>
+      <div class="hero-orb hero-orb-2"></div>
+      <div class="hero-orb hero-orb-3"></div>
+    </div>
+    
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="pulse-dot"></span>
+          <span data-i18n="hero_badge">Open Today · ZERARDA</span>
+        </div>
+        
+        <h1 class="hero-title">
+          <span data-i18n="hero_title1">Fast & Reliable</span><br>
+          <span class="gradient-text" data-i18n="hero_title2">Phone Repair</span>
+        </h1>
+        
+        <p class="hero-description" data-i18n="hero_desc">
+          Expert smartphone repairs with genuine parts and quick turnarounds. Your device is in safe hands at Youssef GSM.
+        </p>
+        
+        <div class="hero-buttons">
+          <a href="contact.html" class="btn btn-primary" data-i18n="btn_book">
+            📅 Book Repair
+          </a>
+          <a href="tel:+212690992767" class="btn btn-secondary" data-i18n="btn_call">
+            📞 Call Now
+          </a>
+          <a href="services.html" class="btn btn-accent" data-i18n="btn_quote">
+            💰 Get Quote
+          </a>
+        </div>
+        
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <div class="hero-stat-value" data-count="5000" data-suffix="+">0</div>
+            <div class="hero-stat-label" data-i18n="stat_devices">Devices Fixed</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-value" data-count="98" data-suffix="%">0</div>
+            <div class="hero-stat-label" data-i18n="stat_rate">Success Rate</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-value" data-count="30" data-suffix="">0</div>
+            <div class="hero-stat-label" data-i18n="stat_time">Avg. Repair</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ FEATURES SECTION ═══ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-subtitle">Why Choose Us</span>
+        <h2 class="section-title" data-i18n="features_heading">Premium Quality Service</h2>
+        <p class="section-description" data-i18n="features_sub">We combine expertise with genuine parts to deliver exceptional repair experiences.</p>
+      </div>
+      
+      <div class="features-grid">
+        <div class="feature-card glass reveal">
+          <div class="feature-icon">🛡️</div>
+          <h3 data-i18n="feat_warranty">3-Month Warranty</h3>
+          <p data-i18n="feat_warranty_desc">All repairs come with a comprehensive 3-month warranty covering parts and labor.</p>
+        </div>
+        
+        <div class="feature-card glass reveal">
+          <div class="feature-icon">⚡</div>
+          <h3 data-i18n="feat_speed">Express Service</h3>
+          <p data-i18n="feat_speed_desc">Most repairs completed in 30-60 minutes while you wait.</p>
+        </div>
+        
+        <div class="feature-card glass reveal">
+          <div class="feature-icon">✨</div>
+          <h3 data-i18n="feat_genuine">Genuine Parts</h3>
+          <p data-i18n="feat_genuine_desc">We use only OEM and high-quality replacement parts.</p>
+        </div>
+        
+        <div class="feature-card glass reveal">
+          <div class="feature-icon">💎</div>
+          <h3 data-i18n="feat_expert">Expert Technicians</h3>
+          <p data-i18n="feat_expert_desc">Certified technicians with years of experience in phone repairs.</p>
+        </div>
+        
+        <div class="feature-card glass reveal">
+          <div class="feature-icon">📍</div>
+          <h3 data-i18n="feat_location">Convenient Location</h3>
+          <p data-i18n="feat_location_desc">Easy to find in ZERARDA with parking available.</p>
+        </div>
+        
+        <div class="feature-card glass reveal">
+          <div class="feature-icon">💬</div>
+          <h3 data-i18n="feat_support">24/7 Support</h3>
+          <p data-i18n="feat_support_desc">Get in touch anytime via WhatsApp for quick assistance.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ COMPARISON SECTION ═══ -->
+  <section class="section" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-subtitle">Comparison</span>
+        <h2 class="section-title" data-i18n="comparison_heading">Open-Boudayri vs Youssef-Claw</h2>
+        <p class="section-description" data-i18n="comparison_sub">Choose the right solution for your business needs.</p>
+      </div>
+      
+      <div class="comparison-grid">
+        <div class="comparison-card">
+          <div class="comparison-header">
+            <div class="comparison-logo">📷</div>
+            <div class="comparison-name">
+              Open-Boudayri
+              <span>Photography Portfolio</span>
+            </div>
+          </div>
+          
+          <div class="comparison-specs">
+            <div class="comparison-spec">
+              <span class="spec-label">Type</span>
+              <span class="spec-value">Next.js 15 App</span>
+            </div>
+            <div class="comparison-spec">
+              <span class="spec-label">Framework</span>
+              <span class="spec-value good">React 19</span>
+            </div>
+            <div class="comparison-spec">
+              <span class="spec-label">Styling</span>
+              <span class="spec-value good">Tailwind CSS v4</span>
+            </div>
+            <div class="comparison-spec">
+              <span class="spec-label">Languages</span>
+              <span class="spec-value neutral">EN / AR (2)</span>
+            </div>
+            <div class="comparison-spec">
+              <span class="spec-label">Storage</span>
+              <span class="spec-value good">Cloudinary</span>
+            </div>
+            <div class="comparison-spec">
+              <span class="spec-label">Database</span>
+              <span class="spec-value neutral">JSON files</span>
+            </div>
+            <div class="comparison-spec">
+              <span class="spec-label">Build</span>
+              <span class="spec-value neutral">Required</span>
+            </div>
+            <div class="comparison-spec">
+              <span class="spec-label">Authentication</span>
+              <span class="spec-value good">JWT + Cookies</span>
+            </div>
+          </div>
+          
+          <div class="comparison-verdict">
+            <p><strong data-i18n="comp_verdict_title">Best For:</strong> <span data-i18n="comp_verdict_boudayri">Photographers needing a dynamic, feature-rich portfolio with admin dashboard.</span></p>
+          </div>
+        </div>
+        
+        <div class="comparison-card winner">
+          <span class="comparison-winner-badge" data-i18n="badge_recommended">⭐ Recommended</span>
+          
+          <div class="comparison-header">
+            <div class="comparison-logo">⚡</div>
+            <div class="comparison-name">
+              Youssef-Claw
+              <span>Phone Repair Site</span>
+            </div>
+          </div>
+          
+          <div class="comparison-specs">
+            <div class="comparison-spec">
+              <span class="spec-label">Type</span>
+              <span class="spec-value">Static HTML/CSS/JS</span>
+            </div>
+            <div class="comparison-spec">
+              <span class="spec-label">Framework</span>
+              <span class="spec-value neutral">Vanilla JS</span>
+            </div>
+            <div class="comparison-spec">
+              <span class="spec-label">Styling</span>
+              <span class="spec-value good">Custom CSS</span>
+            </div>
+            <div class="comparison-spec">
+              <span class="spec-label">Languages</span>
+              <span class="spec-value good">EN / FR / AR (3) ⭐</span>
+            </div>
+            <div class="comparison-spec">
+              <span class="spec-label">Storage</span>
+              <span class="spec-value neutral">Local</span>
+            </div>
+            <div class="comparison-spec">
+              <span class="spec-label">Database</span>
+              <span class="spec-value good">Not required ⭐</span>
+            </div>
+            <div class="comparison-spec">
+              <span class="spec-label">Build</span>
+              <span class="spec-value good">Not required ⭐</span>
+            </div>
+            <div class="comparison-spec">
+              <span class="spec-label">Authentication</span>
+              <span class="spec-value neutral">Not required</span>
+            </div>
+          </div>
+          
+          <div class="comparison-verdict">
+            <p><strong data-i18n="comp_verdict_title">Best For:</strong> <span data-i18n="comp_verdict_youssef">Local businesses needing a fast, easy-to-deploy website with minimal setup.</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ TESTIMONIALS ═══ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-subtitle">Testimonials</span>
+        <h2 class="section-title" data-i18n="testimonials_heading">What Our Customers Say</h2>
+        <p class="section-description" data-i18n="testimonials_sub">Real reviews from satisfied customers in ZERARDA.</p>
+      </div>
+      
+      <div class="testimonials-grid">
+        <div class="testimonial-card glass reveal">
+          <div class="testimonial-rating">
+            <span>★</span><span>★</span><span>★</span><span>★</span>
+          </div>
+          <p class="testimonial-text" data-i18n="t1_text">Fixed my iPhone screen in just 25 minutes! The quality is amazing and price was very fair. Highly recommend Electro Youssef!</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">AK</div>
+            <div class="testimonial-info">
+              <h4 data-i18n="t1_name">Ahmed K.</h4>
+              <p data-i18n="t1_role">iPhone 14 Pro – Screen Repair</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="testimonial-card glass reveal">
+          <div class="testimonial-rating">
+            <span>★</span><span>★</span><span>★</span><span>★</span>
+          </div>
+          <p class="testimonial-text" data-i18n="t2_text">My Samsung was water damaged and I thought it was done for. They recovered all my data and fixed the phone completely. Incredible service!</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">SB</div>
+            <div class="testimonial-info">
+              <h4 data-i18n="t2_name">Sara B.</h4>
+              <p data-i18n="t2_role">Samsung S23 – Water Damage</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="testimonial-card glass reveal">
+          <div class="testimonial-rating">
+            <span>★</span><span>★</span><span>★</span><span>★</span>
+          </div>
+          <p class="testimonial-text" data-i18n="t3_text">Professional, fast, and honest. They told me exactly what was wrong before starting repair. Best repair shop in the area!</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">MR</div>
+            <div class="testimonial-info">
+              <h4 data-i18n="t3_name">Mohamed R.</h4>
+              <p data-i18n="t3_role">Huawei P50 – Battery Replacement</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ FAQ SECTION ═══ -->
+  <section class="section" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-subtitle">Questions?</span>
+        <h2 class="section-title" data-i18n="faq_heading">Frequently Asked Questions</h2>
+        <p class="section-description" data-i18n="faq_sub">Got questions about GSM services? We've got answers.</p>
+      </div>
+      
+      <div class="faq-list">
+        <div class="faq-item reveal">
+          <button class="faq-question">
+            <h4 data-i18n="faq1_q">How long does a typical screen repair take?</h4>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p data-i18n="faq1_a">Most screen replacements take between 30–60 minutes depending on device model. We offer express service for common models like iPhone and Samsung Galaxy.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item reveal">
+          <button class="faq-question">
+            <h4 data-i18n="faq2_q">Do you offer a warranty on repairs?</h4>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p data-i18n="faq2_a">Yes! All our repairs come with a 3-month warranty covering parts and labor. If anything goes wrong during this period, we'll fix it for free.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item reveal">
+          <button class="faq-question">
+            <h4 data-i18n="faq3_q">Do you use genuine parts?</h4>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p data-i18n="faq3_a">We use high-quality OEM and genuine replacement parts for all repairs. We believe in quality over shortcuts to ensure your device performs like new.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item reveal">
+          <button class="faq-question">
+            <h4 data-i18n="faq4_q">Can you recover data from a broken phone?</h4>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p data-i18n="faq4_a">In most cases, yes. We have specialized tools for data recovery from devices with screen damage, water damage, or software issues. Success rate depends on extent of damage.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item reveal">
+          <button class="faq-question">
+            <h4 data-i18n="faq5_q">What phone brands do you repair?</h4>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p data-i18n="faq5_a">We repair all major brands including Apple (iPhone), Samsung, Huawei, Xiaomi, Oppo, Realme, Vivo, OnePlus, and many more. Contact us to check your specific model.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ CTA SECTION ═══ -->
+  <section class="section">
+    <div class="container">
+      <div class="cta-section" style="position: relative; padding: 80px 0; overflow: hidden; border-radius: 24px; background: var(--gradient-primary); text-align: center;">
+        <div style="position: relative; z-index: 1;">
+          <h2 style="font-family: var(--font-display); font-size: clamp(2rem, 4vw, 3rem); font-weight: 800; line-height: 1.2; margin-bottom: 24px; color: white;">
+            <span data-i18n="cta_title">Ready to Get Your Device Fixed?</span>
+          </h2>
+          <p style="font-size: 1.125rem; color: rgba(255, 255, 255, 0.9); max-width: 540px; margin: 0 auto 32px; line-height: 1.7;" data-i18n="cta_sub">Book your repair today and get your phone back in perfect condition.</p>
+          <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+            <a href="contact.html" class="btn" style="background: white; color: var(--primary); width: auto;" data-i18n="services_cta_btn1">📅 Book Now</a>
+            <a href="tel:+212690992767" class="btn" style="background: rgba(255, 255, 255, 0.2); color: white; border-color: rgba(255, 255, 255, 0.3); width: auto;" data-i18n="services_cta_btn2">📞 Call Us</a>
+          </div>
+        </div>
+        <!-- Background decoration -->
+        <div style="position: absolute; width: 400px; height: 400px; background: rgba(255, 255, 255, 0.1); border-radius: 50%; filter: blur(80px); top: -200px; left: -100px;"></div>
+        <div style="position: absolute; width: 300px; height: 300px; background: rgba(255, 255, 255, 0.1); border-radius: 50%; filter: blur(80px); bottom: -150px; right: -50px;"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">
+            <div class="nav-logo-icon">⚡</div>
+            <span data-i18n="brand_name">Youssef GSM</span>
+          </a>
+          <p data-i18n="footer_desc">Fast, reliable smartphone repair in ZERARDA. Your device in safe hands.</p>
+        </div>
+        
+        <div class="footer-section">
+          <h4 data-i18n="footer_services">Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html" data-i18n="srv_screen">Screen Replacement</a></li>
+            <li><a href="services.html" data-i18n="srv_battery">Battery Replacement</a></li>
+            <li><a href="services.html" data-i18n="srv_port">Charging Port Repair</a></li>
+            <li><a href="services.html" data-i18n="srv_water">Water Damage Recovery</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h4 data-i18n="footer_company">Company</h4>
+          <ul class="footer-links">
+            <li><a href="about.html" data-i18n="nav_about">About Us</a></li>
+            <li><a href="pricing.html" data-i18n="nav_pricing">Pricing</a></li>
+            <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h4 data-i18n="footer_contact">Contact</h4>
+          <ul class="footer-links">
+            <li><a href="tel:+212690992767" data-i18n="footer_phone">+212 690 99 27 67</a></li>
+            <li>📍 <span data-i18n="footer_location">ZERARDA, Algeria</span></li>
+            <li><a href="https://wa.me/212690992767" data-i18n="footer_whatsapp">WhatsApp</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-credits">
+        <p>&copy; 2024 Youssef GSM. <span data-i18n="footer_rights">All rights reserved.</span></p>
+        <p data-i18n="footer_made">Developed by AISSAM LAKHYARI</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══ SCRIPTS ═══ -->
+  <script src="js/modern-main-full-v2.js"></script>
 </body>
 </html>
