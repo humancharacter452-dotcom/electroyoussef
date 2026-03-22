@@ -3,36 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Transparent repair pricing at Electro Youssef. Screen, battery, charging port repairs in DZD.">
-  <title>Pricing | Electro Youssef – Phone Repair ZERARDA</title>
-  
+  <meta name="description" content="Phone repair pricing at Electro Youssef in ZERARDA, Algeria. View our transparent pricing for screen replacement, battery replacement, charging port repair, and more.">
+  <title>Pricing | Electro Youssef</title>
+
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
   <!-- Styles -->
   <link rel="stylesheet" href="css/modern-style.css">
-  
+
   <!-- Favicon -->
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
 </head>
 <body>
 
-  <!-- ═══ NAVIGATION ═══ -->
+  <!-- NAVIGATION -->
   <nav class="navbar" id="navbar">
     <div class="container">
-      <a href="index-modern.html" class="nav-logo">
+      <a href="index.html" class="nav-logo">
         <div class="nav-logo-icon">⚡</div>
         <span data-i18n="brand_name">Electro Youssef</span>
       </a>
-      
+
       <div class="nav-links" id="nav-links">
-        <a href="index-modern.html" data-i18n="nav_home">Home</a>
-        <a href="services-modern.html" data-i18n="nav_services">Services</a>
-        <a href="about-modern.html" data-i18n="nav_about">About</a>
-        <a href="contact-modern.html" data-i18n="nav_contact">Contact</a>
-        
+        <a href="index.html" data-i18n="nav_home">Home</a>
+        <a href="services.html" data-i18n="nav_services">Services</a>
+        <a href="about.html" data-i18n="nav_about">About</a>
+        <a href="pricing.html" class="active" data-i18n="nav_pricing">Pricing</a>
+        <a href="contact.html" data-i18n="nav_contact">Contact</a>
+
         <div class="lang-switcher">
           <button class="lang-btn" aria-haspopup="true" aria-expanded="false">
             🌐 <span class="current-lang">EN</span> ▾
@@ -43,272 +44,436 @@
             <button class="lang-option" data-lang="ar" data-i18n="lang_ar">العربية (AR)</button>
           </div>
         </div>
-        
-        <a href="contact-modern.html" class="btn btn-primary btn-sm" data-i18n="nav_book">Book Repair</a>
+
+        <a href="contact.html" class="btn btn-primary btn-sm" data-i18n="nav_book">Get Quote</a>
       </div>
-      
+
       <button class="hamburger" id="hamburger" aria-label="Toggle menu">
         <span></span><span></span><span></span>
       </button>
     </div>
   </nav>
 
-  <!-- ═══ PAGE HEADER ═══ -->
+  <!-- PAGE HEADER -->
   <section class="section" style="padding-top: 120px; padding-bottom: 60px;">
     <div class="container">
       <nav class="breadcrumb" style="display: flex; gap: 12px; align-items: center; color: var(--text-muted); margin-bottom: 24px; font-size: 0.875rem;">
-        <a href="index-modern.html" style="color: var(--text-secondary); text-decoration: none;" data-i18n="nav_home">Home</a>
+        <a href="index.html" style="color: var(--text-secondary); text-decoration: none;" data-i18n="nav_home">Home</a>
         <span style="color: var(--border-color);">/</span>
         <span style="color: var(--text-primary);" data-i18n="nav_pricing">Pricing</span>
       </nav>
-      
+
       <div class="section-header reveal">
         <span class="section-subtitle">Transparent Pricing</span>
-        <h1 class="section-title" data-i18n="pricing_title1">Transparent</h1>
-        <h1 class="gradient-text section-title" data-i18n="pricing_title2">Pricing</h1>
-        <p class="section-description" data-i18n="services_sub">No hidden fees. No surprises. Get a clear estimate before we start any repair.</p>
+        <h1 class="section-title" data-i18n="pricing_heading">Our Phone Repair Prices</h1>
+        <p class="section-description" data-i18n="pricing_sub">Honest, transparent pricing with no hidden fees. DZD prices starting from 1,500.</p>
       </div>
     </div>
   </section>
 
-  <!-- ═══ PRICING CARDS ═══ -->
-  <section class="section" id="pricing" style="background: var(--bg-secondary);">
-    <div class="container">
-      <div class="pricing-grid">
-        
-        <!-- Battery Replacement -->
-        <div class="pricing-card reveal">
-          <div class="pricing-icon">🔋</div>
-          <h3 data-i18n="srv_battery">Battery Replacement</h3>
-          <div class="pricing-price">
-            <span class="pricing-range" data-i18n="price_battery">1,500 – 4,000</span>
-            <span class="pricing-currency" data-i18n="currency_dzd">DZD</span>
-          </div>
-          <p class="pricing-note" data-i18n="price_note">Varies by device model</p>
-          <ul class="pricing-features">
-            <li><span class="check">✓</span> <span data-i18n="price_gen_cells">Genuine cells</span></li>
-            <li><span class="check">✓</span> <span data-i18n="fe_warranty">3-month warranty</span></li>
-            <li><span class="check">✓</span> <span data-i18n="fe_express">20-40 minute turnaround</span></li>
-            <li><span class="check">✓</span> <span data-i18n="price_rel_fix">Reliable fix</span></li>
-          </ul>
-          <a href="contact-modern.html" class="btn btn-secondary" style="width: 100%; justify-content: center;" data-i18n="btn_book">Book Repair</a>
-        </div>
-        
-        <!-- Screen Replacement - FEATURED -->
-        <div class="pricing-card featured reveal">
-          <span class="pricing-badge" data-i18n="badge_common">Most Common</span>
-          <div class="pricing-icon">📱</div>
-          <h3 data-i18n="srv_screen">Screen Replacement</h3>
-          <div class="pricing-price">
-            <span class="pricing-range" data-i18n="price_screen">2,000 – 8,000</span>
-            <span class="pricing-currency" data-i18n="currency_dzd">DZD</span>
-          </div>
-          <p class="pricing-note" data-i18n="price_note">Varies by model and screen type</p>
-          <ul class="pricing-features">
-            <li><span class="check">✓</span> <span data-i18n="fe_genuine">Premium quality parts</span></li>
-            <li><span class="check">✓</span> <span data-i18n="fe_warranty">3-month warranty</span></li>
-            <li><span class="check">✓</span> <span data-i18n="fe_express">30-60 minute turnaround</span></li>
-            <li><span class="check">✓</span> <span data-i18n="price_rel_fix">Reliable fix</span></li>
-          </ul>
-          <a href="contact-modern.html" class="btn btn-primary" style="width: 100%; justify-content: center;" data-i18n="btn_book">Book Repair</a>
-        </div>
-        
-        <!-- Charging Port -->
-        <div class="pricing-card reveal">
-          <div class="pricing-icon">🔌</div>
-          <h3 data-i18n="srv_port">Charging Port Repair</h3>
-          <div class="pricing-price">
-            <span class="pricing-range" data-i18n="price_port">1,000 – 3,000</span>
-            <span class="pricing-currency" data-i18n="currency_dzd">DZD</span>
-          </div>
-          <p class="pricing-note" data-i18n="price_note">Depending on damage severity</p>
-          <ul class="pricing-features">
-            <li><span class="check">✓</span> <span data-i18n="fe_genuine">Quality parts</span></li>
-            <li><span class="check">✓</span> <span data-i18n="fe_warranty">3-month warranty</span></li>
-            <li><span class="check">✓</span> <span data-i18n="fe_express">30-45 minute turnaround</span></li>
-            <li><span class="check">✓</span> <span data-i18n="price_rel_fix">Reliable fix</span></li>
-          </ul>
-          <a href="contact-modern.html" class="btn btn-secondary" style="width: 100%; justify-content: center;" data-i18n="btn_book">Book Repair</a>
-        </div>
-        
-        <!-- Water Damage -->
-        <div class="pricing-card reveal">
-          <div class="pricing-icon">💧</div>
-          <h3 data-i18n="srv_water">Water Damage Recovery</h3>
-          <div class="pricing-price">
-            <span class="pricing-range" data-i18n="price_water">3,000 – 7,000</span>
-            <span class="pricing-currency" data-i18n="currency_dzd">DZD</span>
-          </div>
-          <p class="pricing-note" data-i18n="price_note">Depending on exposure time</p>
-          <ul class="pricing-features">
-            <li><span class="check">✓</span> <span data-i18n="fe_specialized">Specialized tools</span></li>
-            <li><span class="check">✓</span> <span data-i18n="fe_warranty">3-month warranty</span></li>
-            <li><span class="check">✓</span> <span data-i18n="price_rel_fix">Reliable fix</span></li>
-            <li><span class="check">✓</span> <span data-i18n="fe_diagnostic">Free diagnostic</span></li>
-          </ul>
-          <a href="contact-modern.html" class="btn btn-secondary" style="width: 100%; justify-content: center;" data-i18n="btn_book">Book Repair</a>
-        </div>
-        
-        <!-- Data Recovery -->
-        <div class="pricing-card reveal">
-          <div class="pricing-icon">💾</div>
-          <h3 data-i18n="srv_data">Data Recovery</h3>
-          <div class="pricing-price">
-            <span class="pricing-range" data-i18n="price_data">3,000 – 10,000</span>
-            <span class="pricing-currency" data-i18n="currency_dzd">DZD</span>
-          </div>
-          <p class="pricing-note" data-i18n="price_note">Depending on damage severity</p>
-          <ul class="pricing-features">
-            <li><span class="check">✓</span> <span data-i18n="fe_specialized">Specialized tools</span></li>
-            <li><span class="check">✓</span> <span data-i18n="fe_confidential">Confidential handling</span></li>
-            <li><span class="check">✓</span> <span data-i18n="price_rel_fix">Reliable results</span></li>
-            <li><span class="check">✓</span> <span data-i18n="fe_diagnostic">Free diagnostic</span></li>
-          </ul>
-          <a href="contact-modern.html" class="btn btn-secondary" style="width: 100%; justify-content: center;" data-i18n="btn_book">Book Repair</a>
-        </div>
-        
-        <!-- Software Issues -->
-        <div class="pricing-card reveal">
-          <div class="pricing-icon">⚙️</div>
-          <h3 data-i18n="srv_software">Software Issues</h3>
-          <div class="pricing-price">
-            <span class="pricing-range" data-i18n="price_software">500 – 2,000</span>
-            <span class="pricing-currency" data-i18n="currency_dzd">DZD</span>
-          </div>
-          <p class="pricing-note" data-i18n="price_note">Depending on issue complexity</p>
-          <ul class="pricing-features">
-            <li><span class="check">✓</span> <span data-i18n="fe_specialized">Expert diagnosis</span></li>
-            <li><span class="check">✓</span> <span data-i18n="price_rel_fix">Reliable fix</span></li>
-            <li><span class="check">✓</span> <span data-i18n="fe_diagnostic">Free diagnostic</span></li>
-            <li><span class="check">✓</span> <span data-i18n="fe_support">Follow-up support</span></li>
-          </ul>
-          <a href="contact-modern.html" class="btn btn-secondary" style="width: 100%; justify-content: center;" data-i18n="btn_book">Book Repair</a>
-        </div>
-        
-        <!-- Diagnostics -->
-        <div class="pricing-card reveal">
-          <div class="pricing-icon">🔍</div>
-          <h3 data-i18n="srv_diag">Full Diagnostic</h3>
-          <div class="pricing-price">
-            <span class="pricing-range" data-i18n="price_diag">FREE</span>
-          </div>
-          <p class="pricing-note" data-i18n="price_diag_note">Comprehensive device check</p>
-          <ul class="pricing-features">
-            <li><span class="check">✓</span> <span data-i18n="fe_specialized">Full inspection</span></li>
-            <li><span class="check">✓</span> <span data-i18n="fe_expert">Expert analysis</span></li>
-            <li><span class="check">✓</span> <span data-i18n="fe_confidential">Clear report</span></li>
-            <li><span class="check">✓</span> <span data-i18n="price_rel_fix">No obligation</span></li>
-          </ul>
-          <a href="contact-modern.html" class="btn btn-accent" style="width: 100%; justify-content: center;" data-i18n="btn_free">Get Free Diagnostic</a>
-        </div>
-        
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══ FAQ SECTION ═══ -->
+  <!-- SCREEN REPLACEMENT PRICING -->
   <section class="section">
     <div class="container">
-      <div class="section-header reveal">
-        <span class="section-subtitle">Questions?</span>
-        <h2 class="section-title" data-i18n="faq_heading">Frequently Asked Questions</h2>
-        <p class="section-description" data-i18n="faq_sub">Got questions about pricing? We've got answers.</p>
-      </div>
-      
-      <div class="faq-list">
-        <div class="faq-item reveal">
-          <button class="faq-question">
-            <h4 data-i18n="faq_price_q">Do prices include parts and labor?</h4>
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p data-i18n="faq_price_a">Yes! All our prices include both parts and labor. There are no hidden fees or surprise charges. The price we quote is the price you pay.</p>
+      <div class="pricing-section glass reveal">
+        <div class="pricing-header">
+          <div class="pricing-icon">📱</div>
+          <div>
+            <h2 data-i18n="pr_screen">Screen Replacement</h2>
+            <p data-i18n="pr_screen_sub">All major phone models included</p>
           </div>
         </div>
-        
-        <div class="faq-item reveal">
-          <button class="faq-question">
-            <h4 data-i18n="faq_warranty_q">What does the warranty cover?</h4>
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p data-i18n="faq_warranty_a">Our 3-month warranty covers both parts and labor. If the same issue recurs within 3 months, we'll fix it for free.</p>
+
+        <div class="pricing-table">
+          <div class="pricing-row pricing-row-header">
+            <div class="pr-col-brand">Brand</div>
+            <div class="pr-col-model">Models</div>
+            <div class="pr-col-price">Price (DZD)</div>
+          </div>
+
+          <div class="pricing-row">
+            <div class="pr-col-brand">iPhone</div>
+            <div class="pr-col-model">XS, XR, 11, 12 mini</div>
+            <div class="pr-col-price">2,000 - 3,500</div>
+          </div>
+
+          <div class="pricing-row">
+            <div class="pr-col-brand">iPhone</div>
+            <div class="pr-col-model">12, 13 mini, 13</div>
+            <div class="pr-col-price">3,500 - 4,500</div>
+          </div>
+
+          <div class="pricing-row">
+            <div class="pr-col-brand">iPhone</div>
+            <div class="pr-col-model">14, 14 Pro</div>
+            <div class="pr-col-price">4,500 - 6,000</div>
+          </div>
+
+          <div class="pricing-row">
+            <div class="pr-col-brand">iPhone</div>
+            <div class="pr-col-model">15, 15 Pro, 15 Plus</div>
+            <div class="pr-col-price">6,000 - 8,000</div>
+          </div>
+
+          <div class="pricing-row">
+            <div class="pr-col-brand">Samsung</div>
+            <div class="pr-col-model">A系列, S20系列, S21系列</div>
+            <div class="pr-col-price">2,000 - 5,000</div>
+          </div>
+
+          <div class="pricing-row">
+            <div class="pr-col-brand">Samsung</div>
+            <div class="pr-col-model">S22系列, S23系列</div>
+            <div class="pr-col-price">5,000 - 7,000</div>
+          </div>
+
+          <div class="pricing-row">
+            <div class="pr-col-brand">Samsung</div>
+            <div class="pr-col-model">S24系列</div>
+            <div class="pr-col-price">7,000 - 9,000</div>
+          </div>
+
+          <div class="pricing-row">
+            <div class="pr-col-brand">Huawei</div>
+            <div class="pr-col-model">P系列, Mate系列</div>
+            <div class="pr-col-price">2,500 - 6,000</div>
+          </div>
+
+          <div class="pricing-row">
+            <div class="pr-col-brand">Xiaomi</div>
+            <div class="pr-col-model">Redmi, Mi系列</div>
+            <div class="pr-col-price">1,500 - 4,000</div>
+          </div>
+
+          <div class="pricing-row">
+            <div class="pr-col-brand">其他品牌</div>
+            <div class="pr-col-model">Oppo, Realme, Vivo</div>
+            <div class="pr-col-price">1,500 - 5,000</div>
           </div>
         </div>
-        
-        <div class="faq-item reveal">
-          <button class="faq-question">
-            <h4 data-i18n="faq_payment_q">What payment methods do you accept?</h4>
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p data-i18n="faq_payment_a">We accept cash, bank transfers, and mobile payments. Payment is due after the repair is complete and you're satisfied with the results.</p>
-          </div>
+
+        <div class="pricing-notes">
+          <p data-i18n="pr_notes">💡 <strong>Important:</strong> Price includes quality screen replacement. Free diagnostic available. Prices may vary based on exact model and damage level.</p>
         </div>
-        
-        <div class="faq-item reveal">
-          <button class="faq-question">
-            <h4 data-i18n="faq_quote_q">Can I get a quote before the repair?</h4>
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p data-i18n="faq_quote_a">Absolutely! We provide free diagnostics and clear quotes before any work begins. You'll know exactly what to expect.</p>
-          </div>
+
+        <div style="display: flex; gap: 16px; flex-wrap: wrap; margin-top: 32px;">
+          <a href="contact.html" class="btn btn-primary" data-i18n="pr_book">Book Now →</a>
+          <a href="https://wa.me/212690992767?text=Hi, I'd like to know more about screen replacement pricing" class="btn btn-accent" data-i18n="pr_whatsapp">Chat on WhatsApp →</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ═══ CTA SECTION ═══ -->
+  <!-- BATTERY REPLACEMENT PRICING -->
+  <section class="section" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="pricing-section glass reveal">
+        <div class="pricing-header">
+          <div class="pricing-icon">🔋</div>
+          <div>
+            <h2 data-i18n="pr_battery">Battery Replacement</h2>
+            <p data-i18n="pr_battery_sub">New batteries for all devices</p>
+          </div>
+        </div>
+
+        <div class="pricing-table">
+          <div class="pricing-row pricing-row-header">
+            <div class="pr-col-brand">Brand</div>
+            <div class="pr-col-model">Models</div>
+            <div class="pr-col-price">Price (DZD)</div>
+          </div>
+
+          <div class="pricing-row">
+            <div class="pr-col-brand">iPhone</div>
+            <div class="pr-col-model">XR, XS, 11</div>
+            <div class="pr-col-price">1,500 - 2,500</div>
+          </div>
+
+          <div class="pricing-row">
+            <div class="pr-col-brand">iPhone</div>
+            <div class="pr-col-model">12, 13 mini, 13</div>
+            <div class="pr-col-price">2,500 - 3,500</div>
+          </div>
+
+          <div class="pricing-row">
+            <div class="pr-col-brand">iPhone</div>
+            <div class="pr-col-model">14, 14 Pro</div>
+            <div class="pr-col-price">3,500 - 5,000</div>
+          </div>
+
+          <div class="pricing-row">
+            <div class="pr-col-brand">iPhone</div>
+            <div class="pr-col-model">15, 15 Pro, 15 Plus</div>
+            <div class="pr-col-price">5,000 - 6,000</div>
+          </div>
+
+          <div class="pricing-row">
+            <div class="pr-col-brand">Samsung</div>
+            <div class="pr-col-model">所有型号</div>
+            <div class="pr-col-price">2,000 - 4,000</div>
+          </div>
+
+          <div class="pricing-row">
+            <div class="pr-col-brand">Huawei</div>
+            <div class="pr-col-model">所有型号</div>
+            <div class="pr-col-price">2,000 - 4,000</div>
+          </div>
+
+          <div class="pricing-row">
+            <div class="pr-col-brand">Xiaomi</div>
+            <div class="pr-col-model">所有型号</div>
+            <div class="pr-col-price">1,500 - 3,000</div>
+          </div>
+
+          <div class="pricing-row">
+            <div class="pr-col-brand">其他品牌</div>
+            <div class="pr-col-model">Oppo, Realme, Vivo</div>
+            <div class="pr-col-price">1,500 - 3,500</div>
+          </div>
+        </div>
+
+        <div class="pricing-notes">
+          <p data-i18n="pr_notes">💡 <strong>Free Diagnose:</strong> Test your battery health for free. We'll show you before and after performance comparison.</p>
+        </div>
+
+        <div style="display: flex; gap: 16px; flex-wrap: wrap; margin-top: 32px;">
+          <a href="contact.html" class="btn btn-primary" data-i18n="pr_book">Book Now →</a>
+          <a href="https://wa.me/212690992767?text=Hi, I'd like to know more about battery replacement pricing" class="btn btn-accent" data-i18n="pr_whatsapp">Chat on WhatsApp →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CHARGING PORT PRICING -->
+  <section class="section">
+    <div class="container">
+      <div class="pricing-section glass reveal">
+        <div class="pricing-header">
+          <div class="pricing-icon">🔌</div>
+          <div>
+            <h2 data-i18n="pr_charging">Charging Port Repair</h2>
+            <p data-i18n="pr_charging_sub">Fix charging issues quickly</p>
+          </div>
+        </div>
+
+        <div class="pricing-table">
+          <div class="pricing-row pricing-row-header">
+            <div class="pr-col-brand">Service</div>
+            <div class="pr-col-model">Description</div>
+            <div class="pr-col-price">Price (DZD)</div>
+          </div>
+
+          <div class="pricing-row">
+            <div class="pr-col-brand">🔌 Port Cleaning</div>
+            <div class="pr-col-model">Clean and fix loose charging</div>
+            <div class="pr-col-price">1,500 - 2,500</div>
+          </div>
+
+          <div class="pricing-row">
+            <div class="pr-col-brand">🔧 Port Repair</div>
+            <div class="pr-col-model">Repair damaged charging port</div>
+            <div class="pr-col-price">2,500 - 4,500</div>
+          </div>
+
+          <div class="pricing-row">
+            <div class="pr-col-brand">📱 Port Replacement</div>
+            <div class="pr-col-model">Replace completely broken port</div>
+            <div class="pr-col-price">3,500 - 5,500</div>
+          </div>
+
+          <div class="pricing-row">
+            <div class="pr-col-brand">⚡ Cable Replacement</div>
+            <div class="pr-col-model">Replace damaged charging cable</div>
+            <div class="pr-col-price">1,000 - 2,000</div>
+          </div>
+        </div>
+
+        <div class="pricing-notes">
+          <p data-i18n="pr_notes">💡 <strong>Quick Fix:</strong> Most charging port repairs completed in 30-45 minutes while you wait.</p>
+        </div>
+
+        <div style="display: flex; gap: 16px; flex-wrap: wrap; margin-top: 32px;">
+          <a href="contact.html" class="btn btn-primary" data-i18n="pr_book">Book Now →</a>
+          <a href="https://wa.me/212690992767?text=Hi, I'd like to know more about charging port repair pricing" class="btn btn-accent" data-i18n="pr_whatsapp">Chat on WhatsApp →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WATER DAMAGE PRICING -->
+  <section class="section" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="pricing-section glass reveal">
+        <div class="pricing-header">
+          <div class="pricing-icon">💧</div>
+          <div>
+            <h2 data-i18n="pr_water">Water Damage Recovery</h2>
+            <p data-i18n="pr_water_sub">Professional water damage repair</p>
+          </div>
+        </div>
+
+        <div class="pricing-table">
+          <div class="pricing-row pricing-row-header">
+            <div class="pr-col-brand">Service</div>
+            <div class="pr-col-model">Description</div>
+            <div class="pr-col-price">Price (DZD)</div>
+          </div>
+
+          <div class="pricing-row">
+            <div class="pr-col-brand">🔬 Diagnostic</div>
+            <div class="pr-col-model">Free water damage assessment</div>
+            <div class="pr-col-price">Free</div>
+          </div>
+
+          <div class="pricing-row">
+            <div class="pr-col-brand">🧹 Basic Cleaning</div>
+            <div class="pr-col-model">Clean water-damaged device</div>
+            <div class="pr-col-price">2,500 - 4,000</div>
+          </div>
+
+          <div class="pricing-row">
+            <div class="pr-col-brand">🔧 Component Repair</div>
+            <div class="pr-col-model">Replace damaged components</div>
+            <div class="pr-col-price">3,000 - 6,000</div>
+          </div>
+
+          <div class="pricing-row">
+            <div class="pr-col-brand">💾 Data Recovery</div>
+            <div class="pr-col-model">Recover lost data</div>
+            <div class="pr-col-price">2,000 - 5,000</div>
+          </div>
+
+          <div class="pricing-row">
+            <div class="pr-col-brand">✨ Full Repair</div>
+            <div class="pr-col-model">Complete water damage repair</div>
+            <div class="pr-col-price">5,000 - 10,000</div>
+          </div>
+        </div>
+
+        <div class="pricing-notes">
+          <p data-i18n="pr_notes">💡 <strong>Urgent:</strong> Water damage worsens over time. Contact us immediately for best results.</p>
+        </div>
+
+        <div style="display: flex; gap: 16px; flex-wrap: wrap; margin-top: 32px;">
+          <a href="contact.html" class="btn btn-primary" data-i18n="pr_book">Book Now →</a>
+          <a href="https://wa.me/212690992767?text=Hi, I'd like to know more about water damage repair pricing" class="btn btn-accent" data-i18n="pr_whatsapp">Chat on WhatsApp →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DATA RECOVERY PRICING -->
+  <section class="section">
+    <div class="container">
+      <div class="pricing-section glass reveal">
+        <div class="pricing-header">
+          <div class="pricing-icon">💾</div>
+          <div>
+            <h2 data-i18n="pr_data">Data Recovery</h2>
+            <p data-i18n="pr_data_sub">Recover lost data from damaged devices</p>
+          </div>
+        </div>
+
+        <div class="pricing-table">
+          <div class="pricing-row pricing-row-header">
+            <div class="pr-col-brand">Service</div>
+            <div class="pr-col-model">Description</div>
+            <div class="pr-col-price">Price (DZD)</div>
+          </div>
+
+          <div class="pricing-row">
+            <div class="pr-col-brand">📋 Free Diagnostic</div>
+            <div class="pr-col-model">Test recoverability and quote</div>
+            <div class="pr-col-price">Free</div>
+          </div>
+
+          <div class="pricing-row">
+            <div class="pr-col-brand">📸 Photo Recovery</div>
+            <div class="pr-col-model">Recover photos and videos</div>
+            <div class="pr-col-price">2,000 - 4,000</div>
+          </div>
+
+          <div class="pricing-row">
+            <div class="pr-col-brand">💬 Message Recovery</div>
+            <div class="pr-col-model">Recover messages and contacts</div>
+            <div class="pr-col-price">2,500 - 4,500</div>
+          </div>
+
+          <div class="pricing-row">
+            <div class="pr-col-brand">📁 File Recovery</div>
+            <div class="pr-col-model">Recover documents and files</div>
+            <div class="pr-col-price">3,000 - 5,000</div>
+          </div>
+
+          <div class="pricing-row">
+            <div class="pr-col-brand">✨ Complete Recovery</div>
+            <div class="pr-col-model">Full data recovery package</div>
+            <div class="pr-col-price">5,000 - 10,000</div>
+          </div>
+        </div>
+
+        <div class="pricing-notes">
+          <p data-i18n="pr_notes">💡 <strong>No Data, No Charge:</strong> We only charge after successfully recovering your data. First look at your data is always free.</p>
+        </div>
+
+        <div style="display: flex; gap: 16px; flex-wrap: wrap; margin-top: 32px;">
+          <a href="contact.html" class="btn btn-primary" data-i18n="pr_book">Book Now →</a>
+          <a href="https://wa.me/212771863888?text=Hi, I'd like to know more about data recovery pricing" class="btn btn-accent" data-i18n="pr_whatsapp">Chat on WhatsApp →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA SECTION -->
   <section class="section">
     <div class="container">
       <div class="cta-section" style="position: relative; padding: 80px 0; overflow: hidden; border-radius: 24px; background: var(--gradient-primary); text-align: center;">
         <div style="position: relative; z-index: 1;">
-          <h2 style="font-family: var(--font-display); font-size: clamp(2rem, 4vw, 3rem); font-weight: 800; line-height: 1.2; margin-bottom: 24px; color: white;" data-i18n="pricing_cta">Need a Price Quote?</h2>
-          <p style="font-size: 1.125rem; color: rgba(255, 255, 255, 0.9); max-width: 540px; margin: 0 auto 32px; line-height: 1.7;" data-i18n="pricing_cta_sub">Contact us for a free diagnostic and transparent pricing.</p>
+          <h2 style="font-family: var(--font-display); font-size: clamp(2rem, 4vw, 3rem); font-weight: 800; line-height: 1.2; margin-bottom: 24px; color: white;">
+            <span data-i18n="services_cta_title">Need Professional Services?</span>
+          </h2>
+          <p style="font-size: 1.125rem; color: rgba(255, 255, 255, 0.9); max-width: 540px; margin: 0 auto 32px; line-height: 1.7;" data-i18n="services_cta_sub">Contact us today for expert GSM services and web development solutions.</p>
           <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
-            <a href="contact-modern.html" class="btn" style="background: white; color: var(--primary); width: auto;" data-i18n="btn_book">📅 Book Now</a>
-            <a href="tel:+212690992767" class="btn" style="background: rgba(255, 255, 255, 0.2); color: white; border-color: rgba(255, 255, 255, 0.3); width: auto;" data-i18n="btn_call">📞 Call Us</a>
+            <a href="contact.html" class="btn" style="background: white; color: var(--primary); width: auto;" data-i18n="services_cta_btn1">📅 Book Now</a>
+            <a href="tel:+212771863888" class="btn" style="background: rgba(255, 255, 255, 0.2); color: white; border-color: rgba(255, 255, 255, 0.3); width: auto;" data-i18n="services_cta_btn2">📞 Call Us</a>
           </div>
         </div>
-        <!-- Background decoration -->
         <div style="position: absolute; width: 400px; height: 400px; background: rgba(255, 255, 255, 0.1); border-radius: 50%; filter: blur(80px); top: -200px; left: -100px;"></div>
         <div style="position: absolute; width: 300px; height: 300px; background: rgba(255, 255, 255, 0.1); border-radius: 50%; filter: blur(80px); bottom: -150px; right: -50px;"></div>
       </div>
     </div>
   </section>
 
-  <!-- ═══ FOOTER ═══ -->
+  <!-- FOOTER -->
   <footer class="footer">
     <div class="container">
       <div class="footer-content">
         <div class="footer-brand">
-          <a href="index-modern.html" class="nav-logo">
+          <a href="index.html" class="nav-logo">
             <div class="nav-logo-icon">⚡</div>
             <span data-i18n="brand_name">Electro Youssef</span>
           </a>
-          <p data-i18n="footer_desc">Fast, reliable smartphone repair in ZERARDA. Your device in safe hands.</p>
+          <p data-i18n="footer_desc">Professional GSM services and web development in ZERARDA. Expert solutions you can trust.</p>
         </div>
-        
+
         <div class="footer-section">
           <h4 data-i18n="footer_services">Services</h4>
           <ul class="footer-links">
-            <li><a href="services-modern.html" data-i18n="srv_screen">Screen Replacement</a></li>
-            <li><a href="services-modern.html" data-i18n="srv_battery">Battery Replacement</a></li>
-            <li><a href="services-modern.html" data-i18n="srv_port">Charging Port Repair</a></li>
-            <li><a href="services-modern.html" data-i18n="srv_water">Water Damage Recovery</a></li>
+            <li><a href="services.html" data-i18n="srv_tools">Tool Activations</a></li>
+            <li><a href="services.html" data-i18n="srv_server">Server-Side Services</a></li>
+            <li><a href="services.html" data-i18n="srv_frp">FRP Bypass</a></li>
+            <li><a href="services.html" data-i18n="srv_cloud">Cloud Account Removal</a></li>
           </ul>
         </div>
-        
+
         <div class="footer-section">
           <h4 data-i18n="footer_company">Company</h4>
           <ul class="footer-links">
-            <li><a href="about-modern.html" data-i18n="nav_about">About Us</a></li>
-            <li><a href="pricing-modern.html" data-i18n="nav_pricing">Pricing</a></li>
-            <li><a href="contact-modern.html" data-i18n="nav_contact">Contact</a></li>
+            <li><a href="about.html" data-i18n="nav_about">About Us</a></li>
+            <li><a href="pricing.html" data-i18n="nav_pricing">Pricing</a></li>
+            <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
           </ul>
         </div>
-        
+
         <div class="footer-section">
           <h4 data-i18n="footer_contact">Contact</h4>
           <ul class="footer-links">
@@ -318,7 +483,7 @@
           </ul>
         </div>
       </div>
-      
+
       <div class="footer-credits">
         <p>&copy; 2024 Electro Youssef. <span data-i18n="footer_rights">All rights reserved.</span></p>
         <p data-i18n="footer_made">Developed by AISSAM LAKHYARI</p>
@@ -326,7 +491,9 @@
     </div>
   </footer>
 
-  <!-- ═══ SCRIPTS ═══ -->
+  <!-- SCRIPTS -->
   <script src="js/modern-main.js"></script>
 </body>
 </html>
+ml>
+>
