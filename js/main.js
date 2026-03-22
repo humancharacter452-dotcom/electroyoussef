@@ -1,5 +1,5 @@
 /* ============================================
-   Electro Youssef – Main JavaScript
+   Electric Youssef – Main JavaScript
    Navigation, animations, forms, FAQ
    ============================================ */
 
