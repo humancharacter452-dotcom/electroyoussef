@@ -381,7 +381,8 @@ input, button, textarea, select {
   -webkit-backdrop-filter: var(--glass-blur);
 }
 
-.lang-dropdown.show {
+.lang-dropdown.show,
+.lang-dropdown.active {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
@@ -1796,7 +1797,20 @@ input, button, textarea, select {
 
   .lang-switcher {
     margin-left: 0;
-    display: none;
+    width: 100%;
+  }
+
+  .lang-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .lang-dropdown {
+    position: relative;
+    top: auto;
+    right: auto;
+    width: 100%;
+    margin-top: var(--spacing-xs);
   }
 
   .hamburger.active span:nth-child(1) {

@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Professional GSM services at YOUSSEF_GSM. Tool activations, FRP bypass, cloud account removal, MDM solutions, and website development.">
-  <title>GSM Services | YOUSSEF_GSM</title>
+  <meta name="description" content="Professional software services at YOUSSEF_GSM. GSM tool activations, FRP bypass, cloud account removal, website development, and social media growth.">
+  <title>Services | YOUSSEF_GSM</title>
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,6 +16,267 @@
 
   <!-- Favicon -->
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+
+  <style>
+    /* === PREMIUM WEBSITE DEV SECTION === */
+    .web-dev-showcase {
+      position: relative;
+      overflow: hidden;
+    }
+    .web-dev-showcase::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -30%;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(0, 212, 255, 0.12) 0%, transparent 70%);
+      filter: blur(60px);
+      animation: floatOrb 15s ease-in-out infinite;
+    }
+    .web-dev-showcase::after {
+      content: '';
+      position: absolute;
+      bottom: -40%;
+      left: -20%;
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle, rgba(0, 255, 136, 0.08) 0%, transparent 70%);
+      filter: blur(80px);
+      animation: floatOrb 20s ease-in-out infinite reverse;
+    }
+    @keyframes floatOrb {
+      0%, 100% { transform: translate(0, 0); }
+      50% { transform: translate(30px, -20px); }
+    }
+    .web-dev-inner {
+      position: relative;
+      z-index: 2;
+    }
+    .web-dev-hero {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: center;
+      margin-bottom: 3rem;
+    }
+    .web-dev-visual {
+      position: relative;
+      border-radius: 20px;
+      overflow: hidden;
+      background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+      border: 1px solid rgba(0, 212, 255, 0.2);
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5), 0 0 40px rgba(0, 212, 255, 0.15);
+      min-height: 380px;
+      display: flex;
+      flex-direction: column;
+    }
+    .browser-bar {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 14px 18px;
+      background: rgba(30, 41, 59, 0.95);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .browser-dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+    }
+    .browser-dot:nth-child(1) { background: #ff5f56; }
+    .browser-dot:nth-child(2) { background: #ffbd2e; }
+    .browser-dot:nth-child(3) { background: #27c93f; }
+    .browser-url {
+      flex: 1;
+      margin-left: 12px;
+      padding: 6px 14px;
+      background: rgba(15, 23, 42, 0.8);
+      border-radius: 8px;
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+    }
+    .browser-content {
+      flex: 1;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .code-line {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-family: 'Courier New', monospace;
+      font-size: 0.8rem;
+    }
+    .code-line .line-num {
+      color: var(--text-muted);
+      opacity: 0.4;
+      min-width: 24px;
+      text-align: right;
+    }
+    .code-keyword { color: #c792ea; }
+    .code-tag { color: #f07178; }
+    .code-attr { color: #ffcb6b; }
+    .code-string { color: #c3e88d; }
+    .code-comment { color: #546e7a; font-style: italic; }
+    .code-bracket { color: #89ddff; }
+    .typing-cursor {
+      display: inline-block;
+      width: 2px;
+      height: 16px;
+      background: var(--accent);
+      animation: blink 1s infinite;
+      vertical-align: middle;
+      margin-left: 2px;
+    }
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+
+    .tech-stack {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    .tech-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 14px 18px;
+      background: rgba(15, 23, 42, 0.6);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 12px;
+      transition: all 0.3s ease;
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--text-secondary);
+    }
+    .tech-item:hover {
+      border-color: rgba(0, 212, 255, 0.4);
+      background: rgba(0, 212, 255, 0.08);
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(0, 212, 255, 0.15);
+      color: var(--text-primary);
+    }
+    .tech-icon {
+      font-size: 1.5rem;
+    }
+    .process-timeline {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    .process-step {
+      position: relative;
+      padding: 1.5rem;
+      background: rgba(15, 23, 42, 0.5);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 16px;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+    .process-step:hover {
+      border-color: rgba(0, 212, 255, 0.3);
+      transform: translateY(-5px);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+    }
+    .process-num {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: var(--gradient-primary);
+      color: var(--bg-primary);
+      font-weight: 800;
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+      box-shadow: 0 0 20px rgba(0, 212, 255, 0.4);
+    }
+    .process-step h4 {
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+      color: var(--text-primary);
+    }
+    .process-step p {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    /* === SOCIAL MEDIA FOLLOWERS SECTION === */
+    .social-platforms {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    .platform-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+      padding: 1.5rem 1rem;
+      background: rgba(15, 23, 42, 0.6);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 16px;
+      transition: all 0.3s ease;
+      cursor: default;
+    }
+    .platform-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+    }
+    .platform-card:nth-child(1):hover { border-color: #E1306C; box-shadow: 0 0 25px rgba(225, 48, 108, 0.3); }
+    .platform-card:nth-child(2):hover { border-color: #00f2ea; box-shadow: 0 0 25px rgba(0, 242, 234, 0.3); }
+    .platform-card:nth-child(3):hover { border-color: #1877f2; box-shadow: 0 0 25px rgba(24, 119, 242, 0.3); }
+    .platform-card:nth-child(4):hover { border-color: #1DA1F2; box-shadow: 0 0 25px rgba(29, 161, 242, 0.3); }
+    .platform-card:nth-child(5):hover { border-color: #ff0000; box-shadow: 0 0 25px rgba(255, 0, 0, 0.3); }
+    .platform-card:nth-child(6):hover { border-color: #fffc00; box-shadow: 0 0 25px rgba(255, 252, 0, 0.3); }
+    .platform-icon {
+      font-size: 2.5rem;
+    }
+    .platform-name {
+      font-weight: 600;
+      font-size: 0.95rem;
+      color: var(--text-primary);
+    }
+    .platform-desc {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      text-align: center;
+    }
+
+    @media (max-width: 768px) {
+      .web-dev-hero {
+        grid-template-columns: 1fr;
+      }
+      .tech-stack {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .social-platforms {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (max-width: 480px) {
+      .tech-stack {
+        grid-template-columns: 1fr;
+      }
+      .process-timeline {
+        grid-template-columns: 1fr;
+      }
+      .social-platforms {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
 <body>
 
@@ -44,7 +305,7 @@
           </div>
         </div>
 
-        <a href="contact.html" class="btn btn-primary btn-sm" data-i18n="nav_book">Get Quote</a>
+        <a href="https://t.me/YOUSEF_GSM" target="_blank" class="btn btn-primary btn-sm" data-i18n="nav_book">Chat on Telegram</a>
       </div>
 
       <button class="hamburger" id="hamburger" aria-label="Toggle menu">
@@ -63,9 +324,9 @@
       </nav>
 
       <div class="section-header reveal">
-        <span class="section-subtitle">Professional GSM Solutions</span>
-        <h1 class="section-title" data-i18n="services_full_heading">Complete GSM & Web Services</h1>
-        <p class="section-description" data-i18n="services_full_sub">Professional tool activations, FRP bypass, cloud account removal, MDM solutions, and custom website development. Expert solutions you can trust.</p>
+        <span class="section-subtitle">Professional Software Solutions</span>
+        <h1 class="section-title" data-i18n="services_full_heading">Complete Software & GSM Services</h1>
+        <p class="section-description" data-i18n="services_full_sub">Professional GSM tool activations, FRP bypass, cloud account removal, website development, and social media growth. Expert solutions you can trust.</p>
       </div>
     </div>
   </section>
@@ -95,22 +356,97 @@
 
             <h3 data-i18n="s_tools_features">Supported Operations</h3>
             <ul class="service-list">
-              <li>✓ UnlockTool Full Activation</li>
-              <li>✓ Chimera Tool Credits & Activation</li>
-              <li>✓ SigmaKey & Sigma Plus Activations</li>
-              <li>✓ Z3X Samsung & LG Activations</li>
-              <li>✓ Octoplus Suite Activations</li>
-              <li>✓ OPPO/REALME SDM665 Support (Latest)</li>
+              <li data-i18n="s_tools_l1">✓ UnlockTool Full Activation</li>
+              <li data-i18n="s_tools_l2">✓ Chimera Tool Credits & Activation</li>
+              <li data-i18n="s_tools_l3">✓ SigmaKey & Sigma Plus Activations</li>
+              <li data-i18n="s_tools_l4">✓ Z3X Samsung & LG Activations</li>
+              <li data-i18n="s_tools_l5">✓ Octoplus Suite Activations</li>
+              <li data-i18n="s_tools_l6">✓ OPPO/REALME SDM665 Support (Latest)</li>
             </ul>
 
-            <h3 data-i18n="s_tools_note">Important Update</h3>
-            <p style="background: rgba(102, 126, 234, 0.1); padding: 16px; border-radius: 8px; border-left: 4px solid var(--primary);">
-              <strong>🔥 UnlockTool Update:</strong> Now fully supports OPPO/REALME SDM665 devices with latest firmware. Complete unlock, FRP bypass, and IMEI repair capabilities available.
-            </p>
-
             <div style="display: flex; gap: 16px; flex-wrap: wrap; margin-top: 24px;">
-              
-              <a href="contact.html" class="btn btn-primary" data-i18n="s_book_now">Contact Us →</a>
+              <a href="https://t.me/YOUSEF_GSM" target="_blank" class="btn btn-primary" data-i18n="s_book_now">Contact Us →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== -->
+  <!-- PREMIUM WEBSITE DEVELOPMENT -->
+  <!-- ======================== -->
+  <section class="section web-dev-showcase">
+    <div class="container">
+      <div class="service-detail-card glass reveal">
+        <div class="service-detail-header">
+          <div class="service-detail-icon">💻</div>
+          <div>
+            <h2 data-i18n="s_web">Professional Website Development</h2>
+            <p data-i18n="s_web_sub">Custom websites and web applications</p>
+          </div>
+        </div>
+
+        <div class="web-dev-inner">
+          <div class="web-dev-hero">
+            <!-- Live Code Visual -->
+            <div class="web-dev-visual" style="overflow-x: auto;">
+              <div class="browser-bar">
+                <div class="browser-dot"></div>
+                <div class="browser-dot"></div>
+                <div class="browser-dot"></div>
+                <div class="browser-url" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">https://humancharacter452-dotcom.github.io/electroyoussef/</div>
+              </div>
+              <div class="browser-content">
+                <div class="code-line">
+                  <span class="line-num">1</span>
+                  <span class="code-comment">&lt;!-- Your Dream Website --&gt;</span>
+                </div>
+                <div class="code-line">
+                  <span class="line-num">2</span>
+                  <span class="code-bracket">&lt;</span><span class="code-tag">div</span> <span class="code-attr">class</span>=<span class="code-string">"hero"</span><span class="code-bracket">&gt;</span>
+                </div>
+                <div class="code-line">
+                  <span class="line-num">3</span>
+                  <span>&nbsp;&nbsp;</span><span class="code-bracket">&lt;</span><span class="code-tag">h1</span><span class="code-bracket">&gt;</span><span style="color: #eeffff;">Welcome</span><span class="code-bracket">&lt;/</span><span class="code-tag">h1</span><span class="code-bracket">&gt;</span>
+                </div>
+                <div class="code-line">
+                  <span class="line-num">4</span>
+                  <span>&nbsp;&nbsp;</span><span class="code-bracket">&lt;</span><span class="code-tag">p</span><span class="code-bracket">&gt;</span><span style="color: #eeffff;">Built by AISSAM LAKHYARI</span><span class="code-bracket">&lt;/</span><span class="code-tag">p</span><span class="code-bracket">&gt;</span>
+                </div>
+                <div class="code-line">
+                  <span class="line-num">5</span>
+                  <span class="code-bracket">&lt;/</span><span class="code-tag">div</span><span class="code-bracket">&gt;</span><span class="typing-cursor"></span>
+                </div>
+                <div class="code-line" style="margin-top: 1rem;">
+                  <span class="line-num">6</span>
+                  <span class="code-keyword">const</span> <span style="color: #82aaff;">site</span> = <span class="code-string">"modern"</span>;
+                </div>
+                <div class="code-line">
+                  <span class="line-num">7</span>
+                  <span class="code-keyword">const</span> <span style="color: #82aaff;">design</span> = <span class="code-string">"premium"</span>;
+                </div>
+              </div>
+            </div>
+
+            <!-- Info Side -->
+            <div class="service-detail-info">
+              <h3 data-i18n="s_web_title">What We Build</h3>
+              <p data-i18n="s_web_desc">Professional custom websites and web applications tailored to your business. Modern design, responsive layouts, and optimized performance for all devices.</p>
+
+              <h3 data-i18n="s_web_services">Our Web Services</h3>
+              <ul class="service-list">
+                <li data-i18n="s_web_l1">✓ Business Websites & Landing Pages</li>
+                <li data-i18n="s_web_l2">✓ E-commerce Solutions</li>
+                <li data-i18n="s_web_l3">✓ Custom Web Applications</li>
+                <li data-i18n="s_web_l4">✓ Website Redesign & Optimization</li>
+                <li data-i18n="s_web_l5">✓ Mobile-First Responsive Design</li>
+                <li data-i18n="s_web_l6">✓ SEO & Performance Optimization</li>
+              </ul>
+
+              <div style="display: flex; gap: 16px; flex-wrap: wrap; margin-top: 24px;">
+                <a href="https://t.me/YOUSEF_GSM" target="_blank" class="btn btn-primary" data-i18n="s_book_now">Get Started →</a>
+              </div>
             </div>
           </div>
         </div>
@@ -126,7 +462,7 @@
           <div class="service-detail-icon">🌐</div>
           <div>
             <h2 data-i18n="s_server">Server-Side Services</h2>
-            <p data-i18n="s_server_sub">Remote unlock and repair operations</p>
+            <p data-i18n="s_server_sub">Remote unlock and software operations</p>
           </div>
         </div>
 
@@ -139,24 +475,20 @@
 
           <div class="service-detail-info">
             <h3 data-i18n="s_server_title">What We Provide</h3>
-            <p data-i18n="s_server_desc">Fast, reliable server-side services for remote unlocking, IMEI repair, carrier unlocks, and network operations. No physical access required for most operations.</p>
+            <p data-i18n="s_server_desc">Fast, reliable server-side services for remote unlocking, IMEI repair, carrier unlocks, and network operations. No physical access required.</p>
 
             <h3 data-i18n="s_server_features">Available Services</h3>
             <ul class="service-list">
-              <li>✓ IMEI Repair & Restore</li>
-              <li>✓ Carrier Unlock Services</li>
-              <li>✓ Network Code Calculation</li>
-              <li>✓ Remote FRP Removal</li>
-              <li>✓ EFS Partition Repair</li>
-              <li>✓ NVM Repair Operations</li>
+              <li data-i18n="s_server_l1">✓ IMEI Repair & Restore</li>
+              <li data-i18n="s_server_l2">✓ Carrier Unlock Services</li>
+              <li data-i18n="s_server_l3">✓ Network Code Calculation</li>
+              <li data-i18n="s_server_l4">✓ Remote FRP Removal</li>
+              <li data-i18n="s_server_l5">✓ EFS Partition Repair</li>
+              <li data-i18n="s_server_l6">✓ NVM Repair Operations</li>
             </ul>
 
-            <h3 data-i18n="s_server_timing">Processing Time</h3>
-            <p data-i18n="s_server_timing_desc">Most server operations completed within 1-24 hours depending on service type and device model.</p>
-
             <div style="display: flex; gap: 16px; flex-wrap: wrap; margin-top: 24px;">
-              
-              <a href="contact.html" class="btn btn-primary" data-i18n="s_book_now">Contact Us →</a>
+              <a href="https://t.me/YOUSEF_GSM" target="_blank" class="btn btn-primary" data-i18n="s_book_now">Contact Us →</a>
             </div>
           </div>
         </div>
@@ -185,29 +517,20 @@
 
           <div class="service-detail-info">
             <h3 data-i18n="s_frp_title">What We Fix</h3>
-            <p data-i18n="s_frp_desc">Google account verification lock after factory reset. We provide professional FRP bypass for Samsung, Xiaomi, Huawei, OPPO, Realme, Vivo, and all Android brands.</p>
+            <p data-i18n="s_frp_desc">Google account verification lock after factory reset. Professional FRP bypass for Samsung, Xiaomi, Huawei, OPPO, Realme, Vivo, and all Android brands.</p>
 
             <h3 data-i18n="s_frp_brands">Supported Brands</h3>
             <ul class="service-list">
-              <li>✓ Samsung (All Android Versions)</li>
-              <li>✓ Xiaomi/Redmi (MIUI 12-15)</li>
-              <li>✓ Huawei/Honor</li>
-              <li>✓ OPPO & Realme (ColorOS)</li>
-              <li>✓ Vivo (Funtouch OS)</li>
-              <li>✓ Motorola, LG, and more</li>
-            </ul>
-
-            <h3 data-i18n="s_frp_process">Our Process</h3>
-            <ul class="service-list">
-              <li>✓ Device model verification</li>
-              <li>✓ FRP bypass method selection</li>
-              <li>✓ Secure removal process</li>
-              <li>✓ Full functionality test</li>
+              <li data-i18n="s_frp_l1">✓ Samsung (All Android Versions)</li>
+              <li data-i18n="s_frp_l2">✓ Xiaomi/Redmi (MIUI 12-15)</li>
+              <li data-i18n="s_frp_l3">✓ Huawei/Honor</li>
+              <li data-i18n="s_frp_l4">✓ OPPO & Realme (ColorOS)</li>
+              <li data-i18n="s_frp_l5">✓ Vivo (Funtouch OS)</li>
+              <li data-i18n="s_frp_l6">✓ Motorola, LG, and more</li>
             </ul>
 
             <div style="display: flex; gap: 16px; flex-wrap: wrap; margin-top: 24px;">
-              
-              <a href="contact.html" class="btn btn-primary" data-i18n="s_book_now">Contact Us →</a>
+              <a href="https://t.me/YOUSEF_GSM" target="_blank" class="btn btn-primary" data-i18n="s_book_now">Contact Us →</a>
             </div>
           </div>
         </div>
@@ -236,26 +559,20 @@
 
           <div class="service-detail-info">
             <h3 data-i18n="s_cloud_title">What We Remove</h3>
-            <p data-i18n="s_cloud_desc">Cloud account locks and device ID verification that prevent access. Professional removal for Mi Cloud, Samsung Cloud, Google account, and manufacturer-specific locks.</p>
+            <p data-i18n="s_cloud_desc">Cloud account locks and device ID verification. Professional removal for Mi Cloud, Samsung Cloud, Google account, and manufacturer-specific locks.</p>
 
             <h3 data-i18n="s_cloud_services">Account Removal Services</h3>
             <ul class="service-list">
-              <li>✓ Mi Cloud Account Removal</li>
-              <li>✓ Samsung Cloud & Find My Mobile</li>
-          <li>✓ Google Account Lock</li>
-              <li>✓ OPPO/Realme Account</li>
-              <li>✓ Vivo Cloud Account</li>
-              <li>✓ Huawei ID & Honor ID</li>
+              <li data-i18n="s_cloud_l1">✓ Mi Cloud Account Removal</li>
+              <li data-i18n="s_cloud_l2">✓ Samsung Cloud & Find My Mobile</li>
+              <li data-i18n="s_cloud_l3">✓ Google Account Lock</li>
+              <li data-i18n="s_cloud_l4">✓ OPPO/Realme Account</li>
+              <li data-i18n="s_cloud_l5">✓ Vivo Cloud Account</li>
+              <li data-i18n="s_cloud_l6">✓ Huawei ID & Honor ID</li>
             </ul>
 
-            <h3 data-i18n="s_cloud_note">Important</h3>
-            <p style="background: rgba(250, 112, 154, 0.1); padding: 16px; border-radius: 8px; border-left: 4px solid #fa709a;">
-              <strong>⚠️ Proof of Ownership Required:</strong> We verify device ownership before providing account removal services. Original purchase receipt or IMEI registration proof may be requested.
-            </p>
-
             <div style="display: flex; gap: 16px; flex-wrap: wrap; margin-top: 24px;">
-              
-              <a href="contact.html" class="btn btn-primary" data-i18n="s_book_now">Contact Us →</a>
+              <a href="https://t.me/YOUSEF_GSM" target="_blank" class="btn btn-primary" data-i18n="s_book_now">Contact Us →</a>
             </div>
           </div>
         </div>
@@ -263,97 +580,84 @@
     </div>
   </section>
 
-  <!-- FULL BYPASS & MDM -->
-  <section class="section">
-    <div class="container">
-      <div class="service-detail-card glass reveal">
-        <div class="service-detail-header">
-          <div class="service-detail-icon">🛡️</div>
-          <div>
-            <h2 data-i18n="s_mdm">Full Bypass & MDM Solutions</h2>
-            <p data-i18n="s_mdm_sub">Complete device bypass and MDM removal</p>
-          </div>
-        </div>
 
-        <div class="service-detail-content">
-          <div class="service-detail-image">
-            <div class="service-placeholder" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); border-radius: 12px; min-height: 200px; display: flex; align-items: center; justify-content: center; color: white;">
-              🛡️ MDM Solutions
-            </div>
-          </div>
 
-          <div class="service-detail-info">
-            <h3 data-i18n="s_mdm_title">What We Provide</h3>
-            <p data-i18n="s_mdm_desc">Comprehensive bypass solutions for enterprise-managed devices, MDM (Mobile Device Management) removal, activation lock bypass, and full device unlock operations.</p>
-
-            <h3 data-i18n="s_mdm_services">Our Solutions</h3>
-            <ul class="service-list">
-              <li>✓ MDM Profile Removal</li>
-              <li>✓ Enterprise Device Bypass</li>
-              <li>✓ Apple Activation Lock Bypass</li>
-              <li>✓ Samsung KNOX Bypass</li>
-              <li>✓ Full Device Unlock</li>
-              <li>✓ Bootloader Unlock Support</li>
-            </ul>
-
-            <h3 data-i18n="s_mdm_process">Our Approach</h3>
-            <ul class="service-list">
-              <li>✓ Device analysis and method selection</li>
-              <li>✓ Secure bypass implementation</li>
-              <li>✓ Full functionality verification</li>
-              <li>✓ Post-bypass security guidance</li>
-            </ul>
-
-            <div style="display: flex; gap: 16px; flex-wrap: wrap; margin-top: 24px;">
-              
-              <a href="contact.html" class="btn btn-primary" data-i18n="s_book_now">Contact Us →</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- WEBSITE DEVELOPMENT -->
+  <!-- ======================== -->
+  <!-- SOCIAL MEDIA FOLLOWERS -->
+  <!-- ======================== -->
   <section class="section" style="background: var(--bg-secondary);">
     <div class="container">
       <div class="service-detail-card glass reveal">
         <div class="service-detail-header">
-          <div class="service-detail-icon">💻</div>
+          <div class="service-detail-icon">📈</div>
           <div>
-            <h2 data-i18n="s_web">Professional Website Development</h2>
-            <p data-i18n="s_web_sub">Custom websites and web applications</p>
+            <h2 data-i18n="s_followers">Social Media Followers Growth</h2>
+            <p data-i18n="s_followers_sub">Boost your presence on all major platforms</p>
           </div>
         </div>
 
         <div class="service-detail-content">
           <div class="service-detail-image">
-            <div class="service-placeholder" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 12px; min-height: 200px; display: flex; align-items: center; justify-content: center; color: white;">
-              💻 Web Development
+            <div class="service-placeholder" style="background: linear-gradient(135deg, #a855f7 0%, #ec4899 50%, #f97316 100%); border-radius: 12px; min-height: 200px; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.25rem; font-weight: 600;" data-i18n="s_followers_img">
+              📈 Grow Your Audience
             </div>
           </div>
 
           <div class="service-detail-info">
-            <h3 data-i18n="s_web_title">What We Build</h3>
-            <p data-i18n="s_web_desc">Professional custom websites and web applications tailored to your business needs. Modern design, responsive layouts, and optimized performance for all devices.</p>
+            <h3 data-i18n="s_followers_title">What We Offer</h3>
+            <p data-i18n="s_followers_desc">Boost your social media presence with authentic followers and engagement. We provide growth services for all major platforms to help your brand reach more people.</p>
 
-            <h3 data-i18n="s_web_services">Our Web Services</h3>
+            <h3 data-i18n="s_followers_features">Our Growth Services</h3>
             <ul class="service-list">
-              <li>✓ Business Websites & Landing Pages</li>
-              <li>✓ E-commerce Solutions</li>
-              <li>✓ Custom Web Applications</li>
-              <li>✓ Website Redesign & Optimization</li>
-              <li>✓ Mobile-First Responsive Design</li>
-              <li>✓ SEO & Performance Optimization</li>
+              <li data-i18n="s_fol_l1">✓ Authentic Follower Growth</li>
+              <li data-i18n="s_fol_l2">✓ Engagement Boost (Likes, Comments, Views)</li>
+              <li data-i18n="s_fol_l3">✓ Profile Optimization</li>
+              <li data-i18n="s_fol_l4">✓ Targeted Audience Growth</li>
+              <li data-i18n="s_fol_l5">✓ Multi-Platform Support</li>
+              <li data-i18n="s_fol_l6">✓ Results within 24-48 Hours</li>
             </ul>
 
-            <h3 data-i18n="s_web_tech">Technologies</h3>
-            <p>HTML5, CSS3, JavaScript, React, Vue.js, Node.js, PHP, WordPress, and more. We choose the right stack for your project.</p>
+            <h3 data-i18n="s_followers_timing">Delivery Time</h3>
+            <p data-i18n="s_followers_timing_desc">Growth starts within 24-48 hours. Packages available for all budget levels.</p>
 
             <div style="display: flex; gap: 16px; flex-wrap: wrap; margin-top: 24px;">
-              
-              <a href="contact.html" class="btn btn-primary" data-i18n="s_book_now">Contact Us →</a>
+              <a href="https://t.me/YOUSEF_GSM" target="_blank" class="btn btn-primary" data-i18n="s_book_now">Get Started →</a>
             </div>
+          </div>
+        </div>
+
+        <!-- Supported Platforms -->
+        <h3 data-i18n="s_followers_platforms" style="margin-top: 2rem; margin-bottom: 0.5rem; padding: 0 1.5rem;">Supported Platforms</h3>
+        <div class="social-platforms" style="padding: 0 1.5rem 1.5rem;">
+          <div class="platform-card">
+            <span class="platform-icon">📸</span>
+            <span class="platform-name">Instagram</span>
+            <span class="platform-desc" data-i18n="s_plat_ig">Followers, Likes, Views</span>
+          </div>
+          <div class="platform-card">
+            <span class="platform-icon">🎵</span>
+            <span class="platform-name">TikTok</span>
+            <span class="platform-desc" data-i18n="s_plat_tt">Followers, Likes, Views</span>
+          </div>
+          <div class="platform-card">
+            <span class="platform-icon">👤</span>
+            <span class="platform-name">Facebook</span>
+            <span class="platform-desc" data-i18n="s_plat_fb">Page Likes, Followers</span>
+          </div>
+          <div class="platform-card">
+            <span class="platform-icon">🐦</span>
+            <span class="platform-name">Twitter / X</span>
+            <span class="platform-desc" data-i18n="s_plat_tw">Followers, Retweets</span>
+          </div>
+          <div class="platform-card">
+            <span class="platform-icon">▶️</span>
+            <span class="platform-name">YouTube</span>
+            <span class="platform-desc" data-i18n="s_plat_yt">Subscribers, Views</span>
+          </div>
+          <div class="platform-card">
+            <span class="platform-icon">👻</span>
+            <span class="platform-name">Snapchat</span>
+            <span class="platform-desc" data-i18n="s_plat_sc">Followers, Views</span>
           </div>
         </div>
       </div>
@@ -366,12 +670,12 @@
       <div class="cta-section" style="position: relative; padding: 80px 0; overflow: hidden; border-radius: 24px; background: var(--gradient-primary); text-align: center;">
         <div style="position: relative; z-index: 1;">
           <h2 style="font-family: var(--font-display); font-size: clamp(2rem, 4vw, 3rem); font-weight: 800; line-height: 1.2; margin-bottom: 24px; color: white;">
-            <span data-i18n="services_cta_title">Need Professional GSM Services?</span>
+            <span data-i18n="services_cta_title">Need Professional Services?</span>
           </h2>
-          <p style="font-size: 1.125rem; color: rgba(255, 255, 255, 0.9); max-width: 540px; margin: 0 auto 32px; line-height: 1.7;" data-i18n="services_cta_sub">Contact us today for expert tool activations, FRP bypass, cloud account removal, and web development services.</p>
+          <p style="font-size: 1.125rem; color: rgba(255, 255, 255, 0.9); max-width: 540px; margin: 0 auto 32px; line-height: 1.7;" data-i18n="services_cta_sub">Contact us today for expert GSM solutions, website development, and social media growth.</p>
           <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
-            <a href="contact.html" class="btn" style="background: white; color: var(--primary); width: auto;" data-i18n="services_cta_btn1">📅 Contact Us</a>
-            <a href="tel:+212771863888" class="btn" style="background: rgba(255, 255, 255, 0.2); color: white; border-color: rgba(255, 255, 255, 0.3); width: auto;" data-i18n="services_cta_btn2">📞 Call Now</a>
+            <a href="https://t.me/YOUSEF_GSM" target="_blank" class="btn" style="background: white; color: var(--primary); width: auto;" data-i18n="services_cta_btn1">✈️ Chat on Telegram</a>
+            <a href="https://wa.me/212771863888" target="_blank" class="btn" style="background: rgba(255, 255, 255, 0.2); color: white; border-color: rgba(255, 255, 255, 0.3); width: auto;" data-i18n="services_cta_btn2">💬 WhatsApp</a>
           </div>
         </div>
         <div style="position: absolute; width: 400px; height: 400px; background: rgba(255, 255, 255, 0.1); border-radius: 50%; filter: blur(80px); top: -200px; left: -100px;"></div>
@@ -389,16 +693,16 @@
             <div class="nav-logo-icon">⚡</div>
             <span data-i18n="brand_name">YOUSSEF_GSM</span>
           </a>
-          <p data-i18n="footer_desc">Professional GSM services and web development. Expert solutions you can trust.</p>
+          <p data-i18n="footer_desc">Professional software and GSM services. Your digital solution partner.</p>
         </div>
 
         <div class="footer-section">
           <h4 data-i18n="footer_services">Services</h4>
           <ul class="footer-links">
             <li><a href="services.html" data-i18n="srv_tools">Tool Activations</a></li>
-            <li><a href="services.html" data-i18n="srv_server">Server-Side Services</a></li>
+            <li><a href="services.html" data-i18n="srv_web">Website Development</a></li>
+            <li><a href="services.html" data-i18n="srv_followers">Social Media Followers</a></li>
             <li><a href="services.html" data-i18n="srv_frp">FRP Bypass</a></li>
-            <li><a href="services.html" data-i18n="srv_cloud">Cloud Account Removal</a></li>
           </ul>
         </div>
 
@@ -413,8 +717,8 @@
         <div class="footer-section">
           <h4 data-i18n="footer_contact">Contact</h4>
           <ul class="footer-links">
+            <li><a href="https://t.me/YOUSEF_GSM" target="_blank" data-i18n="footer_telegram">✈️ Telegram (@YOUSEF_GSM)</a></li>
             <li><a href="tel:+212771863888" data-i18n="footer_phone">+212 771 86 38 88</a></li>
-            <li><a href="https://t.me/YOUSSEF_GSM" data-i18n="footer_telegram">Telegram (@YOUSSEF_GSM)</a></li>
             <li><a href="https://wa.me/212771863888" data-i18n="footer_whatsapp">WhatsApp</a></li>
           </ul>
         </div>
